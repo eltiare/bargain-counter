@@ -69,7 +69,7 @@ BargainCounter.prototype = {
     if (typeof(opts) == 'number') {
       this.duration = opts;
     } else {
-      var d = 0;
+      var d = opts.milliseconds || 0;
       d = d + (opts.seconds || 0) * 1000;
       d = d + (opts.minutes || 0) * 60 * 1000;
       d = d + (opts.hours || 0) * 60 * 60 * 1000;
